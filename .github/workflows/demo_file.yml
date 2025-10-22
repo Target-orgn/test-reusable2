@@ -1,0 +1,7 @@
+name: firstgroup134335/demo_file
+on:
+  push:
+  workflow_dispatch:
+concurrency:
+  group: "${{ github.ref }}"
+  cancel-in-progress: true
